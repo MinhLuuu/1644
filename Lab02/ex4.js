@@ -1,6 +1,6 @@
 const http = require('http')
 const host ='localhost'
-const port = 9090
+const port = process.env.Port || 3001
 const fs = require('fs') //fs : file system
 const { error } = require('console')
 const server = http.createServer((req, res) => {
